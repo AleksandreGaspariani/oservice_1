@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: 'Noto Sans Georgian';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    gap: 15px;
+}
+
+.ho-list {
+    list-style-type: none;
+    gap: 15px;
+
+    > .ho-list-item {
+        > a {
+            text-decoration: none;
+            color: black;
+        }
+        /*transition: 0.3s ease;*/
+        cursor: pointer;
+        &:hover {
+            border-bottom: 2px solid rgb(27, 167, 224);
+        }
+    }
+
+    > .ho-list-active {
+        border-bottom: 2px solid rgb(27, 167, 224);
+
+    }
+}
+
+.fake-carousel {
+    z-index: 4;
+    height: 60vh;
+    width: 100%;
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+
+    > img {
+        object-fit: contain;
+        width: 100%;
+        object-position: 0rem -15rem;
+    }
+}
+
+#un-carousel {
+    background-image: url("../img/cpy_blured.png");
+    background-color: rgba(0, 0, 0, 0.09);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    > div {
+        > button {
+            font-family: 'Noto Sans Georgian';
+        }
+        > p {
+            > b{
+                font-family: 'Noto Sans Georgian';
+                font-weight: 700 !important;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+#logos {
+    background-image: url("../img/flat-lay-circuit-board-close-up.png");
+    > div {
+        > img {
+            width: 10%;
+            height: auto;
+        }
+    }
+}
+
+#news {
+
+    > div {
+        width: 40%;
+        height: 40%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        cursor: pointer;
+        > p {
+            text-align: center;
+            line-height: 25px;
+            background-color: rgba(173, 173, 173, 0.39);
+            transition: .3s ease;
+            min-height: 7rem;
+        }
+        > img {
+            object-fit: contain;
+        }
+        &:hover > p {
+            background-color: #1ba7e0;
+        }
+    }
+}
+
+.col-2 {
+    > a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#footer {
+    >div {
+        >span {
+            font-size: 14px;
+        }
+        >p {
+            font-size: 14px;
+        }
+        >a {
+            color: white;
+            text-decoration: none;
+            >p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.service-text-bg {
+    background-color: rgba(171, 184, 195, 0.42);
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.services-service {
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover p.service-text-bg{
+        background-color: #1ba7e0;
+    }
+}
+
+.pagination {
+    > li {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.34);
+        }
+    }
+}
+
+#project-div {
+
+    >div {
+        width: 20vw;
+        height: 40vh;
+        overflow: hidden;
+        margin-top: 6px;
+
+        > img {
+            object-fit: cover !important;
+
+            height: inherit;
+        }
+    }
+}
+
+.news-page {
+
+    >div {
+
+        >p {
+            text-align: center;
+            width: 100%;
+            height: inherit;
+
+        }
+    }
+}
+
+#contact {
+    gap: 5%;
+}
